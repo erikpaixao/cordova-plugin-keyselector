@@ -1,0 +1,35 @@
+{
+  "_from": "git+https://github.com/erikpaixao/cordova-plugin-keyselector.git",
+  "_id": "cordova-plugin-siginpdf@1.0.0",
+  "_inBundle": false,
+  "_location": "/cordova-plugin-siginpdf",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/erikpaixao/cordova-plugin-keyselector.git",
+    "rawSpec": "https://github.com/erikpaixao/cordova-plugin-keyselector.git",
+    "saveSpec": "git+https://github.com/erikpaixao/cordova-plugin-keyselector.git",
+    "fetchSpec": "https://github.com/erikpaixao/cordova-plugin-keyselector.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "bundleDependencies": false,
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "gerenate assigned pdf file",
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-keyselector",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikpaixao/cordova-plugin-keyselector.git"
+  },
+  "version": "1.0.0"
+}
+

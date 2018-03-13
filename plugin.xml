@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+    id="id.kodekreatif.keySelector"
+    version="1.0.0">
+    <name>KodeKreatif Key Selector</name>
+    <description>Key Selector for Cordova/Phonegap</description>
+    <license>MIT</license>
+    <keywords>key,selector,security</keywords>
+    <repo>https://github.com/kodekreatif/KeySelector</repo>
+    
+    <js-module src="www/keySelector.js" name="KeySelector">
+        <clobbers target="KeySelector" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="KeySelector" >
+                <param name="android-package" value="id.kodekreatif.cordova.KeySelector"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </config-file>
+
+        <!-- cordova plugin src files -->
+        <source-file src="src/KeySelector.java" target-dir="src/id/kodekreatif/cordova/" />
+    </platform>
+</plugin>
